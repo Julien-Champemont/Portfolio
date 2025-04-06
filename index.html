@@ -464,6 +464,149 @@
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
+          
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+          
+              <div class="sec-center"> 	
+                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+                
+                <!-- LABEL sans fond au repos -->
+                <label class="for-dropdown irregular-box" for="dropdown">
+                  Mes certifications <i class="uil uil-arrow-down"></i>
+                </label>
+                
+                <div class="section-dropdown"> 
+                  <a href="Certification/Attestation SecNum Julien Champemont.pdf" download>Certification SecNum <i class="uil uil-arrow-right"></i></a>
+                  <a href="Certification/attestation-pix-20250219.pdf" download>Certification PIX <i class="uil uil-arrow-right"></i></a>
+                  <a href="Certification/MOOC/Certificat_1 MOOC julien champemont.pdf" download>Certification MOOC CNIL <i class="uil uil-arrow-right"></i></a>
+                  <a href="Certification/Certification-DevWeb.png" download>Certification FrontWeb developer <i class="uil uil-arrow-right"></i></a>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+          <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+          @import url('https://unicons.iconscout.com/release/v4.0.0/css/line.css');
+          
+          .sec-center {
+            position: relative;
+            max-width: 100%;
+            text-align: center;
+            z-index: 200;
+          }
+          
+          /* Cache checkbox */
+          [type="checkbox"]:checked,
+          [type="checkbox"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+          }
+          
+          /* Style neutre au repos */
+          .for-dropdown {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 15px 20px;
+            width: 220px;
+            height: auto;
+            border: 2px solid transparent;
+            background-color: transparent;
+            color: #333;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border-radius: 15px;
+          }
+          
+          /* Effet au survol */
+          .for-dropdown:hover {
+            background-color: #0563bb66;
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          }
+          
+          /* Icône flèche */
+          .for-dropdown .uil {
+            font-size: 20px;
+            margin-left: 10px;
+            transition: transform 200ms linear;
+          }
+          
+          /* Tourne la flèche si menu ouvert */
+          .dropdown:checked + label .uil {
+            transform: rotate(180deg);
+          }
+          
+          /* Menu déroulant caché */
+          .section-dropdown {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #f4f6f8;
+            border-radius: 15px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 200ms ease;
+            box-shadow: 0 14px 25px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+          }
+          
+          /* Menu visible si case cochée */
+          .dropdown:checked ~ .section-dropdown {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+          }
+          
+          /* Petite flèche en haut du menu */
+          .section-dropdown:after {
+            content: '';
+            position: absolute;
+            top: -7px;
+            left: 30px;
+            width: 0; 
+            height: 0; 
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent; 
+            border-bottom: 8px solid #f4f6f8;
+          }
+          
+          /* Lien dans le menu */
+          .section-dropdown a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 15px;
+            margin: 4px 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #333;
+            background: transparent;
+            transition: all 200ms ease;
+          }
+          
+          .section-dropdown a:hover {
+            background-color: #e5f0ff;
+            color: #0563bb;
+          }
+          
+          .section-dropdown a .uil {
+            font-size: 20px;
+          }
+          </style>
+          
+          
 
         </div>
 
