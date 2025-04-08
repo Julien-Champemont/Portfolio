@@ -406,7 +406,14 @@
           padding: 25px 30px;
           border-radius: 15px;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-          transition: transform 0.3s ease;
+          opacity: 0;
+          transform: translateY(50px); /* L'élément commence 50px plus bas */
+          transition: opacity 0.6s ease, transform 0.6s ease; /* Durée de l'ani */
+        }
+
+        .stage.visible {
+          opacity: 1;
+          transform: translateY(0); /* L'élément remonte à sa position d'origine */
         }
     
         .stage:hover {
@@ -510,6 +517,27 @@
           <a class="btn" href="Document/Rapport de stage 2ème année.pdf" target="_blank">Voir le rapport de stage</a>
         </div>
       </div>
+      <script>
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible'); // Ajouter la classe pour lancer l'animation
+              observer.unobserve(entry.target); // Arrêter d'observer l'élément une fois qu'il est visible
+            }
+          });
+        }, {
+          threshold: 0.5 // L'élément doit être à 50% visible pour que l'animation se déclenche
+        });
+      
+        // Cibler tous les éléments avec la classe 'rise-up'
+        const riseUpElements = document.querySelectorAll('.stage');
+        
+        // Observer chaque élément
+        riseUpElements.forEach(element => {
+          observer.observe(element);
+        });
+      </script>
+      
     </section>
 
     <section id="tableau">
@@ -544,9 +572,16 @@
           padding: 25px 30px;
           border-radius: 15px;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-          transition: transform 0.3s ease;
+          opacity: 0;
+          transform: translateY(50px); /* L'élément commence 50px plus bas */
+          transition: opacity 0.6s ease, transform 0.6s ease; /* Durée de l'animation */
         }
-    
+
+        .tableau.visible {
+          opacity: 1;
+          transform: translateY(0); /* L'élément remonte à sa position d'origine */
+        }
+
         .tableau:hover {
           transform: translateY(-5px);
         }
@@ -591,7 +626,7 @@
     
       <div class="tableau-container">
         <div class="tableau">
-          <a class="btn" href="Document/tableau de synthèse.ods" download>Tableau de synthèse</a>
+          <a class="btn" href="Document/tableau de synthèse.ods" target="_blank">Tableau de synthèse</a>
           <img src="Document/tab_1.png" alt="Image Tableau de Synthèse">
           <br>
           <img src="Document/tab_2.png" alt="Image Tableau de Synthèse">
@@ -599,6 +634,27 @@
           <img src="Document/tab_3.png" alt="Image Tableau de Synthèse">
         </div>
       </div>
+      <script>
+        const observer2 = new IntersectionObserver((entries, observer2) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible'); // Ajouter la classe pour lancer l'animation
+              observer2.unobserve(entry.target); // Arrêter d'observer l'élément une fois qu'il est visible
+            }
+          });
+        }, {
+          threshold: 0.5 // L'élément doit être à 50% visible pour que l'animation se déclenche
+        });
+      
+        // Cibler tous les éléments avec la classe 'rise-up'
+        const riseUpElements2 = document.querySelectorAll('.tableau');
+        
+        // Observer chaque élément
+        riseUpElements2.forEach(element => {
+          observer2.observe(element);
+        });
+      </script>
+      
     </section>
     
 
