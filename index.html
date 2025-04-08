@@ -49,6 +49,8 @@
         <li><a href="#skills"><i class="bi bi-lightbulb navicon"></i><span>Skills</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>CV</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Projets</span></a></li>
+        <li><a href="#stages"><i class="bi bi-headphones"></i><span>Stages</span></a></li>
+        <li><a href="#tableau"><i class="bi bi-cloud"></i><span>Tableau</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Document</span></a></li>
         <li><a href="#Veille"><i class="bi bi-bounding-box-circles"></i><span>Veille</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
@@ -372,6 +374,234 @@
 
     </section><!-- /Portfolio Section -->
 
+    <section id="stages">
+      <style>
+        #stage {
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          padding: 40px;
+          color: #333;
+          line-height: 1.7;
+        }
+    
+        #stage h1 {
+          text-align: center;
+          font-size: 2.5em;
+          color: #2c3e50;
+          margin-bottom: 40px;
+          border-bottom: 3px solid #2980b9;
+          display: inline-block;
+          padding-bottom: 10px;
+        }
+    
+        .stage-container {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          max-width: 850px;
+          margin: auto;
+        }
+    
+        .stage {
+          background-color: #fff;
+          padding: 25px 30px;
+          border-radius: 15px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          transition: transform 0.3s ease;
+        }
+    
+        .stage:hover {
+          transform: translateY(-5px);
+        }
+    
+        .stage h2 {
+          margin-top: 0;
+          font-size: 1.8em;
+          color: #2980b9;
+          margin-bottom: 10px;
+          position: relative;
+        }
+    
+        .stage h2::after {
+          content: '';
+          display: block;
+          width: 60px;
+          height: 3px;
+          background: #2980b9;
+          margin-top: 8px;
+        }
+    
+        .stage p {
+          text-align: justify;
+          margin-top: 15px;
+          font-size: 1.05em;
+        }
+    
+        .btn {
+          display: inline-block;
+          margin-top: 20px;
+          padding: 10px 25px;
+          background-color: #2980b9;
+          color: white;
+          text-decoration: none;
+          border-radius: 8px;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+        }
+    
+        .btn:hover {
+          background-color: #1c5980;
+        }
+    
+        /* Media Query for Small Screens */
+        @media (max-width: 768px) {
+          #stage h1 {
+            font-size: 2em;
+          }
+    
+          .stage-container {
+            gap: 20px;
+          }
+    
+          .stage {
+            padding: 20px;
+          }
+    
+          .stage h2 {
+            font-size: 1.6em;
+          }
+    
+          .stage p {
+            font-size: 1em;
+          }
+    
+          .btn {
+            padding: 8px 20px;
+            font-size: 0.9em;
+          }
+        }
+      </style>
+    
+      <h1>Mes Stages de BTS SIO</h1>
+    
+      <div class="stage-container">
+        <div class="stage">
+          <h2>Stage de 1ère année – Arsium</h2>
+          <p>
+            Lors de mon premier stage chez <strong>Arsium</strong>, société spécialisée en cybersécurité et infrastructure IT,
+            j’ai participé au développement d’une application de renommage de fichiers en C# selon les règles internes de l'entreprise.
+            J’ai également contribué à la mise en place d’une machine virtuelle Windows Server et initié la configuration de switches HP.
+          </p>
+          <p>
+            Ce stage m’a permis de développer mes compétences en développement, en réseau, et de découvrir un environnement professionnel dynamique, exigeant et bienveillant.
+          </p>
+          <a class="btn" href="Document/Rapport de stage 2.pdf" target="_blank">Voir le rapport de stage</a>
+        </div>
+    
+        <div class="stage">
+          <h2>Stage de 2ème année – Passman</h2>
+          <p>
+            Mon second stage s’est déroulé chez <strong>Passman</strong>, une entreprise spécialisée en domotique pour hôtels.
+            J’y ai réalisé diverses missions telles que l’installation de mini-PC sous Windows, la configuration de systèmes PMS, la soudure de composants électroniques,
+            la préparation de commandes ainsi que de l’assistance technique téléphonique auprès des clients.
+          </p>
+          <p>
+            Ce stage m’a permis de renforcer mes compétences techniques (hardware & software), logistiques et relationnelles, tout en gagnant en autonomie et rigueur professionnelle.
+          </p>
+          <a class="btn" href="Document/" target="_blank">Voir le rapport de stage</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tableau">
+      <style>
+        #tableau {
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          padding: 40px;
+          color: #333;
+          line-height: 1.7;
+          text-align: center;
+        }
+    
+        #tableau h1 {
+          font-size: 2.5em;
+          color: #2c3e50;
+          margin-bottom: 40px;
+          border-bottom: 3px solid #2980b9;
+          display: inline-block;
+          padding-bottom: 10px;
+        }
+    
+        .tableau-container {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          max-width: 850px;
+          margin: auto;
+        }
+    
+        .tableau {
+          background-color: #fff;
+          padding: 25px 30px;
+          border-radius: 15px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          transition: transform 0.3s ease;
+        }
+    
+        .tableau:hover {
+          transform: translateY(-5px);
+        }
+    
+        .tableau h2 {
+          font-size: 1.8em;
+          color: #2980b9;
+          margin-bottom: 20px;
+        }
+    
+        .tableau img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+    
+        /* Media Query for Small Screens */
+        @media (max-width: 768px) {
+          #tableau h1 {
+            font-size: 2em;
+          }
+    
+          .tableau-container {
+            gap: 20px;
+          }
+    
+          .tableau {
+            padding: 20px;
+          }
+    
+          .tableau h2 {
+            font-size: 1.6em;
+          }
+    
+          .tableau img {
+            width: 90%;
+          }
+        }
+      </style>
+    
+      <h1>Tableau de Synthèse</h1>
+    
+      <div class="tableau-container">
+        <div class="tableau">
+          <a class="btn" href="Document/tableau de synthèse.ods" download>Tableau de synthèse</a>
+          <img src="Document/tab_1.png" alt="Image Tableau de Synthèse">
+          <br>
+          <img src="Document/tab_2.png" alt="Image Tableau de Synthèse">
+          <br>
+          <img src="Document/tab_3.png" alt="Image Tableau de Synthèse">
+        </div>
+      </div>
+    </section>
+    
+
     <!-- Services Section -->
     <section id="services" class="services section">
 
@@ -604,6 +834,37 @@
           .section-dropdown a .uil {
             font-size: 20px;
           }
+          @media screen and (max-width: 768px) {
+          .for-dropdown {
+            width: 100%;
+            font-size: 16px;
+            padding: 12px;
+          }
+
+          .section-dropdown {
+            top: 60px;
+            width: 100%;
+            left: 0;
+            transform: translateY(0); /* Évite décalage bizarre */
+          }
+
+          .section-dropdown:after {
+            left: 20px;
+          }
+
+          .section-dropdown a {
+            font-size: 14px;
+            padding: 10px;
+          }
+
+          .sec-center {
+            width: 100%;
+          }
+
+          .service-item {
+            padding: 0 10px;
+          }
+        }
           </style>
           
           
